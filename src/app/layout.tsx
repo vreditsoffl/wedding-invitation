@@ -48,11 +48,13 @@ export default function RootLayout({
       className={`${inter.variable} ${cormorant.variable} ${greatVibes.variable} ${notoSerifTamil.variable} antialiased`}
     >
       <body className="flex flex-col min-h-screen bg-[#2A000A] text-foreground overflow-x-hidden w-full">
-        <LanguageProvider>
-           <div className="max-w-[430px] w-full mx-auto min-h-screen bg-[#4B0012] relative overflow-x-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border-x border-[#E5C067]/10 font-sans">
-              {children}
-           </div>
-        </LanguageProvider>
+        <SmoothScroll>
+          <LanguageProvider>
+             <div className="max-w-[430px] w-full mx-auto min-h-screen bg-[#4B0012] relative overflow-x-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border-x border-[#E5C067]/10 font-sans">
+                {children}
+             </div>
+          </LanguageProvider>
+        </SmoothScroll>
       </body>
     </html>
   );
