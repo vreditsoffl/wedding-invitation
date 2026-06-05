@@ -102,12 +102,12 @@ html.lenis, html.lenis body {
               inset 3px 3px 6px 0px #150003;
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.1; transform: scale(0.5); }
-  50% { opacity: 1; transform: scale(1.5); }
+@keyframes twinkle-dust {
+  0%, 100% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: var(--max-opacity, 0.4); transform: scale(1.2); }
 }
 
-.animate-twinkle {
-  animation: twinkle var(--duration, 2s) ease-in-out infinite;
+.animate-twinkle-dust {
+  animation: twinkle-dust var(--duration, 2s) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
 }
