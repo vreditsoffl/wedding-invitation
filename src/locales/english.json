@@ -3,7 +3,7 @@
     "title": "Dhivakar ❤️ Satya Priya"
   },
   "hero": {
-    "blessing": "With the Blessings of Sri Kaathavarayan & Sri Veeran",
+    "blessing": "ஸ்ரீ காத்தவராயன் துணை | ஸ்ரீ வீரன் துணை",
     "title": "THE WEDDING OF",
     "groom": "J. DHIVAKAR",
     "groomQual": "D.C.S.E., Business (Delhi)",
@@ -16,7 +16,8 @@
     "scroll": "SCROLL"
   },
   "coupleIntro": {
-    "text": "Together with their families, we invite you to celebrate our wedding."
+    "title": "MEET THE COUPLE",
+    "text": "Two hearts, one beautiful dream coming true. Together with our families, we joyfully invite you to celebrate our love and share in the magic of our new beginning."
   },
   "journey": {
     "title": "Our Journey",
@@ -25,19 +26,22 @@
     "wedding": "Wedding Celebration"
   },
   "events": {
+    "title": "WEDDING EVENTS",
     "reception": {
       "title": "Reception",
       "dateLabel": "Date",
       "dateValue": "10 June 2026",
+      "dayValue": "Wednesday",
       "timeLabel": "Time",
-      "timeValue": "7:00 PM to 8:00 PM"
+      "timeValue": "6:30 PM Onwards"
     },
     "wedding": {
-      "title": "Marriage",
+      "title": "Wedding",
       "dateLabel": "Date",
       "dateValue": "11 June 2026",
+      "dayValue": "Thursday",
       "timeLabel": "Muhurtham",
-      "timeValue": "10:00 AM to 11:00 AM"
+      "timeValue": "9:00 AM to 10:30 AM"
     }
   },
   "family": {
@@ -60,11 +64,13 @@
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
-    "seconds": "Seconds"
+    "seconds": "Seconds",
+    "conclusion": "Your love and blessings are the greatest gifts we could ask for. Please join us as we celebrate our new beginning and step into a lifetime of togetherness.",
+    "signature": "We eagerly look forward to your presence."
   },
   "venue": {
     "title": "Venue",
-    "hall": "Sorna Durai Marriage Hall",
+    "hall": "Udhayamarthandapuram, Sorna Durai Marriage Hall",
     "village": "Nachikulam",
     "district": "Thiruvarur",
     "state": "Tamil Nadu",

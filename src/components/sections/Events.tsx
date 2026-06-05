@@ -40,8 +40,8 @@ export const Events = () => {
       
       {/* Heading */}
       <div className="flex flex-col items-center mb-10">
-          <h2 className="text-xl font-cormorant text-[#E5C067] uppercase tracking-[0.3em] text-center">
-            WEDDING EVENTS
+          <h2 className="text-xl font-cormorant text-[#FFE8A1] uppercase tracking-[0.3em] text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            {(t as any).events.title || "WEDDING EVENTS"}
           </h2>
       </div>
 
@@ -66,17 +66,17 @@ export const Events = () => {
                    <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[#E5C067]/60 rounded-br-[8px]"></div>
 
                    <h3 className="text-4xl md:text-5xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-4">
-                     Reception
+                     {t.events.reception.title}
                    </h3>
                    
                    <p className="text-[13px] font-sans font-medium text-[#FFF8E7] tracking-[0.2em] uppercase mb-1" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-                     10 June 2026
+                     {t.events.reception.dateValue}
                    </p>
                    <p className="text-[#E5C067] font-cormorant tracking-widest uppercase text-xs mb-4">
-                     Wednesday
+                     {(t as any).events.reception.dayValue}
                    </p>
                    <p className="text-xs font-sans font-medium text-[#FFF8E7] tracking-[0.15em] uppercase" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-                     6:30 PM Onwards
+                     {t.events.reception.timeValue}
                    </p>
                    
                  </div>
@@ -85,10 +85,19 @@ export const Events = () => {
           </div>
 
           {/* Elegant Divider */}
-          <div className="flex items-center justify-center gap-2 my-6 opacity-90">
-             <div className="w-2 h-2 transform rotate-45 border border-[#E5C067]/60"></div>
-             <div className="w-3 h-3 transform rotate-45 bg-gradient-to-br from-[#FFE8A1] to-[#D4AF37]" style={{ boxShadow: "0 0 10px rgba(229,192,103,0.6)" }}></div>
-             <div className="w-2 h-2 transform rotate-45 border border-[#E5C067]/60"></div>
+          <div className="flex items-center justify-center gap-4 my-8 opacity-90">
+             <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#E5C067]/80"></div>
+             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform hover:scale-110 transition-transform duration-500">
+               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#goldGradient)" filter="drop-shadow(0px 2px 6px rgba(229,192,103,0.4))"/>
+               <defs>
+                 <linearGradient id="goldGradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                   <stop stopColor="#FFE8A1"/>
+                   <stop offset="0.5" stopColor="#D4AF37"/>
+                   <stop offset="1" stopColor="#E5C067"/>
+                 </linearGradient>
+               </defs>
+             </svg>
+             <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#E5C067]/80"></div>
           </div>
 
           {/* Wedding Ceremony Card */}
@@ -109,20 +118,20 @@ export const Events = () => {
                    <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[#E5C067]/60 rounded-br-[8px]"></div>
                  
                    <h3 className="text-4xl md:text-5xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-4">
-                     Marriage
+                     {t.events.wedding.title}
                    </h3>
                    
                    <p className="text-[13px] font-sans font-medium text-[#FFF8E7] tracking-[0.2em] uppercase mb-1" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-                     11 June 2026
+                     {t.events.wedding.dateValue}
                    </p>
                    <p className="text-[#E5C067] font-cormorant tracking-widest uppercase text-xs mb-5">
-                     Thursday
+                     {(t as any).events.wedding.dayValue}
                    </p>
                    
                    <div className="flex flex-col items-center gap-1.5">
-                     <p className="text-[#E5C067] font-cormorant text-xs tracking-[0.2em] uppercase">Muhurtham</p>
+                     <p className="text-[#E5C067] font-cormorant text-xs tracking-[0.2em] uppercase">{t.events.wedding.timeLabel}</p>
                      <p className="text-xs font-sans font-medium text-[#FFF8E7] tracking-[0.15em] uppercase" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-                       9:00 AM - 10:30 AM
+                       {t.events.wedding.timeValue}
                      </p>
                    </div>
                    

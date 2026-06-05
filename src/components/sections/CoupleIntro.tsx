@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 import { Glitter } from "@/components/Glitter";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +22,11 @@ const OrnamentalDivider = ({ className = "" }) => (
 
 export const CoupleIntro = () => {
   const containerRef = useRef<HTMLElement>(null);
+  const { t } = useLanguage();
+  
+  const names = t.preloader.title.split(" ❤️ ");
+  const groomName = names[0];
+  const brideName = names[1];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -62,7 +68,7 @@ export const CoupleIntro = () => {
         {/* Header */}
         <div className="couple-element flex flex-col items-center justify-center w-full mb-10">
           <h2 className="text-xl font-cormorant text-[#E5C067] uppercase tracking-[0.3em] text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            MEET THE COUPLE
+            {(t as any).coupleIntro.title || "MEET THE COUPLE"}
           </h2>
         </div>
 
@@ -84,7 +90,7 @@ export const CoupleIntro = () => {
         <div className="couple-element flex flex-col items-center w-full mb-2">
             
             <h3 className="text-3xl md:text-4xl flex items-center justify-center flex-wrap gap-x-4 font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-8 w-full px-2">
-              <span>Dhivakar</span>
+              <span>{groomName}</span>
               <svg className="w-9 h-9 transform -translate-y-1" viewBox="0 0 64 64" fill="none">
                 <defs>
                   <linearGradient id="metalRing" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -126,14 +132,14 @@ export const CoupleIntro = () => {
                   <path d="M 40 10 L 41 14 L 45 15 L 41 16 L 40 20 L 39 16 L 35 15 L 39 14 Z" fill="#FFFFFF" />
                 </g>
               </svg>
-              <span>Satya Priya</span>
+              <span>{brideName}</span>
             </h3>
 
             <p 
-              className="text-lg md:text-xl font-cormorant text-[#FFF8E7] tracking-wide font-medium leading-relaxed text-center w-full px-4 max-w-[420px]" 
+              className="text-lg md:text-xl font-cormorant text-[#FFF8E7] tracking-wide font-medium leading-relaxed text-center w-full px-4 max-w-[420px] whitespace-pre-line" 
               style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}
             >
-              Two hearts, one beautiful dream coming true. Together with our families, we joyfully invite you to celebrate our love and share in the magic of our new beginning.
+              {t.coupleIntro.text}
             </p>
 
         </div>

@@ -102,12 +102,21 @@ html.lenis, html.lenis body {
               inset 3px 3px 6px 0px #150003;
 }
 
-@keyframes twinkle-dust {
-  0%, 100% { opacity: 0; transform: scale(0.8); }
-  50% { opacity: var(--max-opacity, 0.4); transform: scale(1.2); }
-}
-
-.animate-twinkle-dust {
-  animation: twinkle-dust var(--duration, 2s) ease-in-out infinite;
+/* 4-point star sparkle */
+/* Radial particle sparkle */
+.sparkle-particle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle, rgba(255, 236, 166, 0.9) 0%, rgba(255, 236, 166, 0) 70%);
+  border-radius: 50%;
+  animation: sparkle-pulse var(--duration, 2s) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
 }
+
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 0.9; transform: scale(1); }
+}
+
+

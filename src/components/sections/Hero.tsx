@@ -111,8 +111,8 @@ export const Hero = () => {
          <span className="text-sm font-medium text-[#E5C067] mb-1 border-b border-[#E5C067]/60 px-1">
            உ
          </span>
-         <span className="text-xs font-sans font-normal text-[#E5C067]/90 tracking-wide text-center px-4">
-           ஸ்ரீ காத்தவராயன் துணை, ஸ்ரீ வீரன் துணை
+         <span className="text-xs font-sans font-normal text-[#E5C067]/90 tracking-wide text-center px-4 whitespace-pre-line">
+           {t.hero.blessing}
          </span>
       </div>
 
@@ -124,7 +124,7 @@ export const Hero = () => {
 
         {/* Wedding Title */}
         <h3 className="hero-element text-xs uppercase tracking-[0.4em] font-sans font-medium text-[#FFF8E7] mb-10 opacity-90" style={{ textShadow: "0 2px 6px rgba(0,0,0,0.9)" }}>
-          THE WEDDING OF
+          {t.hero.title}
         </h3>
 
         {/* Names */}
@@ -139,17 +139,17 @@ export const Hero = () => {
                   filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.8))"
                 }}
               >
-                J. DHIVAKAR
+                {t.hero.groom}
               </h1>
               <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-sans text-[#FFF8E7]/80 mt-2" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.9)" }}>
-                D.C.S.E., Business (Delhi)
+                {t.hero.groomQual}
               </p>
           </div>
           
           {/* Ampersand */}
           <div className="flex items-center justify-center gap-4 mb-2 relative z-10 w-full px-6">
              <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent via-[#E5C067] to-transparent opacity-40"></div>
-             <span className="text-2xl text-[#E5C067] font-cormorant italic font-medium" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>&amp;</span>
+             <span className="text-2xl text-[#E5C067] font-cormorant italic font-medium" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>{t.hero.and}</span>
              <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent via-[#E5C067] to-transparent opacity-40"></div>
           </div>
           
@@ -162,10 +162,10 @@ export const Hero = () => {
                   filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.8))"
                 }}
               >
-                S. SATYA PRIYA
+                {t.hero.bride}
               </h1>
               <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-sans text-[#FFF8E7]/80 mt-2" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.9)" }}>
-                Ph.D (FMS, Delhi University)
+                {t.hero.brideQual}
               </p>
           </div>
         </div>
@@ -176,7 +176,7 @@ export const Hero = () => {
              className="text-base md:text-lg tracking-[0.5em] font-sans font-light text-[#FFE8A1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-3" 
              style={{ marginRight: '-0.5em' }}
            >
-             11
+             {t.hero.dateValue.split(" ")[0]}
            </span>
            
            <div className="flex items-center justify-center w-full px-12">
@@ -185,7 +185,7 @@ export const Hero = () => {
                className="text-2xl md:text-3xl uppercase tracking-[0.6em] font-sans font-medium text-[#FFE8A1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] px-6" 
                style={{ marginRight: '-0.6em' }}
              >
-               JUNE
+               {t.hero.dateValue.split(" ")[1]}
              </span>
              <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-[#E5C067]/40"></div>
            </div>
@@ -194,7 +194,7 @@ export const Hero = () => {
              className="text-base md:text-lg tracking-[0.5em] font-sans font-light text-[#FFE8A1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mt-3" 
              style={{ marginRight: '-0.5em' }}
            >
-             2026
+             {t.hero.dateValue.split(" ")[2]}
            </span>
         </div>
 

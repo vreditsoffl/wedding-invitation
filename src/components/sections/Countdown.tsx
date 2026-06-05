@@ -58,10 +58,10 @@ export const Countdown = () => {
   }, []);
 
   const timeBlocks = [
-    { label: "Days", value: timeLeft.days },
-    { label: "Hours", value: timeLeft.hours },
-    { label: "Minutes", value: timeLeft.minutes },
-    { label: "Seconds", value: timeLeft.seconds },
+    { label: t.countdown.days, value: timeLeft.days },
+    { label: t.countdown.hours, value: timeLeft.hours },
+    { label: t.countdown.minutes, value: timeLeft.minutes },
+    { label: t.countdown.seconds, value: timeLeft.seconds },
   ];
 
   return (
@@ -101,19 +101,9 @@ export const Countdown = () => {
 
         {/* Conclusion / Blessings Content */}
         <div className="countdown-element flex flex-col items-center justify-center text-center mt-12 px-4">
-          <p className="text-xs font-sans uppercase tracking-[0.2em] font-medium text-[#E5C067]/80 leading-loose max-w-[320px] mb-8">
-            With the graceful blessings of our parents and elders, we
+          <p className="text-xl md:text-2xl font-cormorant italic tracking-wide text-[#FFE8A1] leading-relaxed max-w-[420px] mb-10 whitespace-pre-line" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
+            {t.countdown.conclusion}
           </p>
-
-          <h3 className="text-4xl md:text-6xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-8">
-            Dhivakar & Satya Priya
-          </h3>
-
-          <p className="text-[15px] font-sans font-light tracking-wide text-[#FFF8E7]/90 leading-relaxed max-w-[340px] mb-10" style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-            joyfully invite you to bear witness as we exchange our vows, celebrate our love, and begin our lifelong journey together.
-          </p>
-
-
         </div>
       </div>
 

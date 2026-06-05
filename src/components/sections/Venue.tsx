@@ -42,7 +42,7 @@ export const Venue = () => {
       {/* Heading */}
       <div className="relative w-full z-10 flex flex-col items-center justify-center py-12 px-4">
         <h2 className="text-xl font-cormorant text-[#E5C067] uppercase tracking-[0.3em] mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-          The Venue
+          {t.venue.title}
         </h2>
       </div>
 
@@ -70,15 +70,14 @@ export const Venue = () => {
                       <MapPin className="w-6 h-6 text-[#E5C067]" />
                    </div>
 
-                   <h3 className="text-4xl md:text-5xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-6 leading-tight">
-                     Sorna Durai<br/>Marriage Hall
+                   <h3 className="text-4xl md:text-5xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-6 leading-tight whitespace-pre-wrap">
+                     {t.venue.hall.replace(/ /g, '\n')}
                    </h3>
                    
                    <p className="text-[13px] font-sans font-medium text-[#FFF8E7] tracking-[0.15em] uppercase leading-relaxed mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                     Nachikulam<br/>
-                     Thiruthuraipoondi Taluk<br/>
-                     Thiruvarur District<br/>
-                     Tamil Nadu
+                     {t.venue.village}<br/>
+                     {t.venue.district}<br/>
+                     {t.venue.state}
                    </p>
                    
                    <a 
@@ -87,13 +86,13 @@ export const Venue = () => {
                      rel="noopener noreferrer"
                      className="w-full min-h-[44px] flex items-center justify-center bg-gradient-to-r from-[#E5C067] via-[#FFE8A1] to-[#D4AF37] text-[#1a1a1a] font-sans font-bold py-3 px-6 rounded-full active:scale-95 transition-transform uppercase tracking-widest text-[11px] shadow-[0_4px_15px_rgba(229,192,103,0.4)] mb-8"
                    >
-                     Get Directions
+                     {t.venue.navigate}
                    </a>
                    
                    <div className="w-full flex justify-between items-center gap-2 border-t border-[#E5C067]/20 pt-6">
                       <a href="tel:+919643545378" className="flex flex-col items-center justify-center gap-2 text-[#E5C067] hover:text-[#FFF8E7] transition-colors min-w-[64px] min-h-[44px]">
                         <Phone className="w-5 h-5 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]" />
-                        <span className="text-[10px] font-sans tracking-[0.2em] uppercase font-medium">Call</span>
+                        <span className="text-[10px] font-sans tracking-[0.2em] uppercase font-medium">{t.venue.call}</span>
                       </a>
                       <a 
                         href="https://wa.me/919643545378?text=Send%20me%20the%20venue%20location" 
