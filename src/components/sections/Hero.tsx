@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Glitter } from "@/components/Glitter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +60,7 @@ export const Hero = () => {
       className="relative min-h-[100vh] w-full overflow-hidden flex flex-col items-center justify-center"
       style={{ minHeight: "100vh" }}
     >
+      <Glitter />
       {/* Background Image with Parallax */}
       <div 
         ref={bgRef} 

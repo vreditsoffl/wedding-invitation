@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { Glitter } from "@/components/Glitter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,8 +56,9 @@ export const CoupleIntro = () => {
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#E5C067]/10 rounded-full blur-[80px]"></div>
       </div>
+      <Glitter />
 
-      <div className="px-[20px] text-center relative z-10 flex flex-col items-center justify-evenly w-full flex-1 min-h-[90dvh] py-4">
+      <div className="px-[20px] text-center relative z-10 flex flex-col items-center justify-center w-full flex-1 py-12">
         {/* Header */}
         <div className="couple-element flex flex-col items-center justify-center w-full mb-10">
           <h2 className="text-xl font-cormorant text-[#E5C067] uppercase tracking-[0.3em] text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">

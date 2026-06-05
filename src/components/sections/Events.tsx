@@ -1,8 +1,13 @@
 "use client";
 
+import { Calendar, Clock, MapPin } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Glitter } from "@/components/Glitter";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Events = () => {
   const { t } = useLanguage();
@@ -28,7 +33,13 @@ export const Events = () => {
   }, [t]);
 
   return (
-    <section ref={containerRef} className="min-h-[100dvh] py-[5vh] flex flex-col justify-center bg-royal-pattern relative overflow-hidden">
+    <section id="events" ref={containerRef} className="relative w-full overflow-hidden">
+      {/* Background with darker gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#250003] via-[#4A000B] to-[#250003] opacity-95"></div>
+      <Glitter />
+      
+      {/* Content */}
+      <div className="w-full relative z-10 flex flex-col items-center justify-center py-12 px-4">
       
       {/* Heading */}
       <div className="flex flex-col items-center mb-10">

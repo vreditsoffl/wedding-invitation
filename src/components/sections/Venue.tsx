@@ -2,9 +2,13 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { MapPin, Navigation, Phone, CalendarHeart, MessageCircle } from "lucide-react";
+import { Glitter } from "@/components/Glitter";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Venue = () => {
   const { t } = useLanguage();
@@ -32,10 +36,11 @@ export const Venue = () => {
   }, [t]);
 
   return (
-    <section ref={containerRef} className="min-h-[100dvh] py-[5vh] flex flex-col justify-center bg-royal-pattern relative overflow-hidden">
+    <section ref={containerRef} className="py-[5vh] flex flex-col justify-center bg-royal-pattern relative overflow-hidden">
+      <Glitter />
       
       {/* Heading */}
-      <div className="venue-element flex flex-col items-center mb-10 px-4 text-center">
+      <div className="relative w-full z-10 flex flex-col items-center justify-center py-12 px-4">
         <h2 className="text-xl font-cormorant text-[#E5C067] uppercase tracking-[0.3em] mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           The Venue
         </h2>

@@ -98,9 +98,16 @@ html.lenis, html.lenis body {
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  box-shadow: inset 10px 10px 20px #150003,
-              inset -10px -10px 20px rgba(255, 255, 255, 0.02);
-  pointer-events: none;
+  box-shadow: inset -3px -3px 8px 0px rgba(255, 255, 255, 0.04),
+              inset 3px 3px 6px 0px #150003;
 }
 
+@keyframes twinkle {
+  0%, 100% { opacity: 0.1; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
 
+.animate-twinkle {
+  animation: twinkle var(--duration, 2s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
