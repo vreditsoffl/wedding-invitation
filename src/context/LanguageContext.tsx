@@ -2,8 +2,9 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import en from "@/locales/english.json";
+import ta from "@/locales/tamil.json";
 
-type Language = "en";
+type Language = "en" | "ta";
 
 type Translations = typeof en;
 
@@ -22,7 +23,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
   useEffect(() => {
     setMounted(true);
     const savedLang = localStorage.getItem("wedding-lang") as Language;
-    if (savedLang && savedLang === "en") {
+    if (savedLang && (savedLang === "en" || savedLang === "ta")) {
       setLanguage(savedLang);
     }
   }, []);
@@ -32,7 +33,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     localStorage.setItem("wedding-lang", lang);
   };
 
-  const t = en;
+  const t = language === "ta" ? (ta as Translations) : en;
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
