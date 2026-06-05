@@ -22,10 +22,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dhivakar & Satya Priya | Wedding Invitation",
-  description: "Join us in celebrating the traditional Tamil wedding of Dhivakar and Satya Priya.",
+  title: "Satyapriya & Dhivakar | Wedding Invitation",
+  description: "Join us in celebrating the wedding of Satyapriya and Dhivakar",
   openGraph: {
-    title: "Dhivakar & Satya Priya | Wedding Invitation",
+    title: "Satyapriya & Dhivakar | Wedding Invitation",
     description: "Join us in celebrating our wedding.",
     type: "website",
   }

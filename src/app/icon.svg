@@ -1,3 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <path d="M50 88.5s-40-28.5-40-57C10 16 27.5 4.5 50 27.5 72.5 4.5 90 16 90 31.5c0 28.5-40 57-40 57z" fill="#E5C067"/>
+  <!-- Left Ring -->
+  <circle cx="40" cy="50" r="22" fill="none" stroke="#E5C067" stroke-width="6"/>
+  <!-- Right Ring -->
+  <circle cx="60" cy="50" r="22" fill="none" stroke="#E5C067" stroke-width="6"/>
+  <!-- overlap to create interlocking effect -->
+  <path d="M 52 31.5 A 22 22 0 0 1 60 50 A 22 22 0 0 1 48 68.5" fill="none" stroke="#E5C067" stroke-width="6"/>
 </svg>
