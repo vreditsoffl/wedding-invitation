@@ -8,7 +8,6 @@ import Image from "next/image";
 export const Preloader = () => {
   const { t } = useLanguage();
   const [isLoading, setIsLoading] = useState(true);
-  const names = t.preloader.title.split(" ❤️ ");
 
   useEffect(() => {
     // Simulate loading time for the preloader to show
@@ -77,13 +76,13 @@ export const Preloader = () => {
               </div>
 
               <h1 className="text-5xl md:text-6xl text-center font-cormorant font-normal text-[#FFE8A1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-                {names[0]}
+                Dhivakar
               </h1>
               <span className="text-3xl font-light text-[#E5C067] font-cormorant italic my-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                ~ {t.hero.and} ~
+                ~ &amp; ~
               </span>
               <h1 className="text-5xl md:text-6xl text-center font-cormorant font-normal text-[#FFE8A1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-                {names[1]}
+                Satya Priya
               </h1>
 
               <div className="flex items-center justify-center gap-2 mt-5 opacity-80">

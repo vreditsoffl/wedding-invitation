@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Venue = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   
   const mapsUrl = "https://maps.google.com/?q=Sorna+Durai+Marriage+Hall+Thiruvarur";
@@ -70,8 +70,8 @@ export const Venue = () => {
                       <MapPin className="w-6 h-6 text-[#E5C067]" />
                    </div>
 
-                   <h3 className="text-4xl md:text-5xl font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-6 leading-tight whitespace-pre-wrap">
-                     {t.venue.hall.replace(/ /g, '\n')}
+                   <h3 className={`font-script text-[#FFE8A1] font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-6 px-2 ${language === 'ta' ? 'text-[22px] md:text-3xl leading-relaxed' : 'text-[32px] md:text-[40px] leading-tight'} whitespace-pre-line`}>
+                     {t.venue.hall.replace(", ", ",\n")}
                    </h3>
                    
                    <p className="text-[13px] font-sans font-medium text-[#FFF8E7] tracking-[0.15em] uppercase leading-relaxed mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">

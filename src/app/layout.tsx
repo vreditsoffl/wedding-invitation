@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Cinzel, Cormorant_Garamond, Great_Vibes } from "next/font/google";
+import { Playfair_Display, Inter, Cinzel, Cormorant_Garamond, Great_Vibes, Noto_Serif_Tamil } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { SmoothScroll } from "@/components/SmoothScroll";
@@ -21,6 +21,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const notoSerifTamil = Noto_Serif_Tamil({
+  variable: "--font-tamil",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["tamil"],
+});
+
 export const metadata: Metadata = {
   title: "Satyapriya & Dhivakar | Wedding Invitation",
   description: "Join us in celebrating the wedding of Satyapriya and Dhivakar",
@@ -39,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${cormorant.variable} ${greatVibes.variable} antialiased`}
+      className={`${inter.variable} ${cormorant.variable} ${greatVibes.variable} ${notoSerifTamil.variable} antialiased`}
     >
       <body className="flex flex-col min-h-screen bg-[#2A000A] text-foreground overflow-x-hidden w-full">
         <LanguageProvider>

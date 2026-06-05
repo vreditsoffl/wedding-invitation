@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+[data-lang="ta"] {
+  --font-sans: var(--font-tamil) !important;
+  --font-cormorant: var(--font-tamil) !important;
+  --font-script: var(--font-tamil) !important;
+}
+
+/* Elegant Tamil Typography System */
+[data-lang="ta"] h1,
+[data-lang="ta"] h2,
+[data-lang="ta"] h3,
+[data-lang="ta"] .font-cormorant,
+[data-lang="ta"] .font-script {
+  font-family: var(--font-tamil) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+}
+
+[data-lang="ta"] p,
+[data-lang="ta"] span,
+[data-lang="ta"] .font-sans {
+  font-family: var(--font-tamil) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em !important;
+}
+
 :root {
   --background: #3A0008;
   --foreground: #FFF8E7;

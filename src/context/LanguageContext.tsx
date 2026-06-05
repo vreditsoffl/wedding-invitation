@@ -37,7 +37,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
-      <div suppressHydrationWarning>{children}</div>
+      <div suppressHydrationWarning data-lang={language}>{children}</div>
     </LanguageContext.Provider>
   );
 };
