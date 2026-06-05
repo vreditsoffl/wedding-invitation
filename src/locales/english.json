@@ -1,0 +1,83 @@
+{
+  "preloader": {
+    "title": "Dhivakar ❤️ Satya Priya"
+  },
+  "hero": {
+    "blessing": "With the Blessings of Sri Kaathavarayan & Sri Veeran",
+    "title": "THE WEDDING OF",
+    "groom": "J. DHIVAKAR",
+    "groomQual": "D.C.S.E., Business (Delhi)",
+    "and": "&",
+    "bride": "S. SATYA PRIYA",
+    "brideQual": "Ph.D (FMS, Delhi University)",
+    "dateLabel": "Wedding Date",
+    "dateValue": "11 JUNE 2026",
+    "invitation": "Together with our families,\nwe request the honour of your presence\nat our wedding celebration.",
+    "scroll": "SCROLL"
+  },
+  "coupleIntro": {
+    "text": "Together with their families, we invite you to celebrate our wedding."
+  },
+  "journey": {
+    "title": "Our Journey",
+    "firstMeeting": "First Meeting",
+    "engagement": "Engagement",
+    "wedding": "Wedding Celebration"
+  },
+  "events": {
+    "reception": {
+      "title": "Reception",
+      "dateLabel": "Date",
+      "dateValue": "10 June 2026",
+      "timeLabel": "Time",
+      "timeValue": "7:00 PM to 8:00 PM"
+    },
+    "wedding": {
+      "title": "Marriage",
+      "dateLabel": "Date",
+      "dateValue": "11 June 2026",
+      "timeLabel": "Muhurtham",
+      "timeValue": "10:00 AM to 11:00 AM"
+    }
+  },
+  "family": {
+    "brideFamily": "Bride Family",
+    "groomFamily": "Groom Family",
+    "brideDetails": [
+      "Thiruvarur District, Thiruthuraipoondi Taluk,",
+      "Idumbavanam",
+      "M. Selvaraj - Latha",
+      "S. Satya Priya Ph.D (FMS, Delhi University)"
+    ],
+    "groomDetails": [
+      "Thiruvarur District, Thiruthuraipoondi Taluk,",
+      "Pinnathur, Jeevanagar",
+      "K. Jeeva - Karpagam",
+      "J. Dhivakar D.C.S.E., Business (Delhi)"
+    ]
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "venue": {
+    "title": "Venue",
+    "hall": "Sorna Durai Marriage Hall",
+    "village": "Nachikulam",
+    "district": "Thiruvarur",
+    "state": "Tamil Nadu",
+    "openMaps": "Open in Maps",
+    "navigate": "Navigate",
+    "call": "Call Venue"
+  },
+  "gallery": {
+    "title": "Photo Gallery"
+  },
+  "blessings": {
+    "message": "Your presence will make our day complete.",
+    "names": "Dhivakar ❤️ Satya Priya",
+    "seeYou": "See you on 11 June 2026"
+  }
+}
