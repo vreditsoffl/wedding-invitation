@@ -33,13 +33,10 @@ export const Events = () => {
   }, [t]);
 
   return (
-    <section id="events" ref={containerRef} className="relative w-full overflow-hidden">
+    <section id="events" ref={containerRef} className="relative w-full overflow-hidden py-12 px-4">
       {/* Background with darker gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#250003] via-[#4A000B] to-[#250003] opacity-95"></div>
       <Glitter />
-      
-      {/* Content */}
-      <div className="w-full relative z-10 flex flex-col items-center justify-center py-12 px-4">
       
       {/* Heading */}
       <div className="flex flex-col items-center mb-10">
